@@ -1,0 +1,484 @@
+/* =============== CSS RESET TOOLS =============== */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: Geom, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* =============== CSS RESET TOOLS =============== */
+
+/* =============== BODY =============== */
+
+section {
+    background-color: #fffcdf;
+    padding: 24px;
+    border: 3px solid #26ccc1b7;
+    border-radius: 8px;
+}
+
+header {
+    background-color: #26ccc1b7;
+    padding-block: 24px;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+main {
+    width: min(90%, 1200px);
+    margin-block: 24px;
+    margin-inline: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #26CCC2;
+    margin-bottom: 12px
+}
+
+#bookForm {
+    display: flex;
+    flex-direction: column;
+    gap: 14px
+}
+
+#bookForm p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+}
+
+label {
+    font-weight: bold;
+    color: #26CCC2
+}
+
+input {
+    padding-inline: 12px;
+    padding-block: 9px;
+    border: 2px solid transparent;
+    outline: none;
+    transition: all .2s ease-in-out;
+    font-size: .9rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #26CCC2;
+}
+
+input:focus {
+    border: 2px solid #26CCC2
+}
+
+#placeLabel {
+    font-weight: bold;
+}
+
+button {
+    padding-block: 10px;
+    padding-inline: 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 5px #26CCC2;
+    transition: all .1s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f5f5f5;
+}
+
+#searchBook {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+#searchBookTitle {
+    flex: 7
+}
+
+#searchSubmit {
+    flex: 1
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.input-container div {
+    flex: 1;
+    min-width: 0;
+}
+
+.book-container {
+    border: 2px solid #26ccc1;
+    background-color: white;
+    padding-inline: 12px;
+    padding-block: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+    margin-right: 8px;
+    margin-block: 8px;
+    box-shadow: none;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: #26ccc1;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #26CCC2;
+}
+
+.book-container div button {
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-right: 6px;
+}
+
+.no-book {
+    text-align: center;
+    font-size: 1.15rem;
+    color: brown;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+.main-tools {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.main-tools>* {
+    flex: 1;
+    min-width: 0;
+}
+
+.search-book-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.search-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* .search-book-space {
+    background-color: 26ccc1;
+    color: white;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+} */
+
+.content {
+    display: flex;
+    gap: 16px
+}
+
+.content section {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #26ccc141;
+    padding-block: 30px;
+    text-align: center;
+    border-block: 3px solid #26ccc1;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.15rem;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* =============== BODY =============== */
+
+/* =============== RESPONSIVE =============== */
+
+@media screen and (max-width: 786px) {
+    main {
+        width: 90%;
+    }
+
+    .main-tools {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main-tools>* {
+        width: 100%;
+    }
+
+    .search-book {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        width: 100%;
+        padding-inline: 16px;
+    }
+
+    #searchBook {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #searchBookTitle {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #searchSubmit {
+        align-self: flex-end;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content section:first-of-type {
+        order: 1;
+    }
+
+    .content section:last-of-type {
+        order: 2;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* =============== RESPONSIVE =============== */
